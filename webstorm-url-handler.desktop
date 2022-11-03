@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Webstorm URL Handler
+Comment=Handle URL Scheme webstorm://open?url=file://@file&line=@line and webstorm://open?file=@file&line=@line
+Icon=webstorm
+NoDisplay=true
+Categories=TextEditor;Utility;
+Exec=webstorm-url-handler %u
+Terminal=false
+MimeType=x-scheme-handler/webstorm;x-scheme-handler/wstorm;x-scheme-handler/txmt;
+X-Desktop-File-Install-Version=0.21
