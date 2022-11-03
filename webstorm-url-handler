@@ -7,7 +7,7 @@
 # webstorm://open?file=@file:line
 #
 # @license GPL
-# @author Stefan Auditor <stefan@auditor.email>
+# @author Purwa Astawa <purwa@crazyslug.net>
 
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
@@ -20,7 +20,7 @@ file=$(echo "${arg}" | sed -r "s/${pattern}/\2/")
 # Get the line number.
 line=$(echo "${arg}" | sed -r "s/${pattern}/\4/")
 
-# Check if phpstorm|pstorm command exist.
+# Check if webstorm|wstorm command exist.
 if type webstorm > /dev/null; then
     /usr/bin/env webstorm --line "${line}" "${file}"
 elif type pstorm > /dev/null; then
